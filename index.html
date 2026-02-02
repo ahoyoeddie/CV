@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - AHOYO Eddie Mickes</title>
+    <style>
+        :root {
+            --primary: #1a2a6c;
+            --accent: #0052D4;
+            --text: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 35% 65%;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* Colonne de Gauche */
+        .sidebar {
+            background-color: var(--primary);
+            color: white;
+            padding: 30px;
+        }
+
+        /* --- SECTION PHOTO --- */
+        .profile-img-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+            border: 3px solid rgba(255,255,255,0.2);
+            border-radius: 50%;
+            overflow: hidden; /* Pour que la photo reste ronde */
+            background: #eee;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Important : évite de déformer la photo */
+        }
+
+        .sidebar h2 {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .contact-info p { font-size: 0.9em; margin: 10px 0; }
+
+        /* Colonne de Droite */
+        .main-content {
+            padding: 40px;
+            background: white;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 2.2em;
+            text-transform: uppercase;
+        }
+
+        .job-title {
+            color: var(--accent);
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        section { margin-bottom: 25px; }
+
+        h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--light-bg);
+            padding-bottom: 5px;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 0.9em;
+        }
+
+        .company { font-weight: bold; display: block; }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 5px; }
+
+        @media (max-width: 768px) {
+            .cv-container { grid-template-columns: 1fr; }
+            .sidebar { padding: 20px; text-align: center; }
+        }
+
+        @media print {
+            body { padding: 0; background: white; }
+            .cv-container { box-shadow: none; grid-template-columns: 35% 65%; }
+            .sidebar { print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <div class="sidebar">
+        <div class="profile-img-container">
+            <img src="ma-photo.jpg" alt="Photo de AHOYO Eddie Mickes">
+        </div>
+        
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>📞 +229 01 62 62 57 10</p>
+            <p>✉ eddieahoyo633@gmail.com</p>
+            <p>📍 Cotonou, Bénin</p>
+        </div>
+
+        <h2>Compétences</h2>
+        <p><strong>Systèmes:</strong> Windows, Linux, windows Server</p>
+        <p><strong>Réseaux:</strong> Routage & Commutation (Cisco/MikroTik), Filtrage (Netfilter/Iptables), Protocoles TCP/IP.</p>
+        <p><strong>Sécurité & Monitoring:</strong> VPN, Wireshark, Cryptographie, Gestion des accès</p>
+        <p><strong>Cloud & Virtualisation:</strong> VMware vSphere, VirtualBox, Bases en Docker & Cloud Computing</p>
+        <p><strong>Bureautique :</strong> Maîtrise avancée de la suite Office & Outils collaboratifs.</p>
+
+        <h2>Langues</h2>
+        <p>Français : Courant</p>
+        <p>Fon : Courant</p>
+        <p>Anglais : Académique</p>
+
+        <h2>Intérêts</h2>
+        <p>Sport, Cinéma, Tech, Résolution de défis</p>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>AHOYO Eddie Mickes</h1>
+            <div class="job-title">INFORMATIQUE • RÉSEAUX & TÉLÉCOMMUNICATIONS</div>
+        </header>
+
+        <section>
+            <h3>🎯 Profil</h3>
+            <p>Jeune diplômé en Informatique, Réseaux et Télécommunications. Rigoureux et déterminé, je suis motivé à contribuer à des projets techniques (systèmes, réseaux, cybersécurité) dans un cadre professionnel stimulant.</p>
+        </section>
+
+        <section>
+            <h3>💼 Expériences Professionnelles</h3>
+            <div class="experience-item">
+                <span class="date">Avril 2024 - Juillet 2024</span>
+                <span class="company">Port Autonome de Cotonou – Département SI</span>
+                <strong>Stagiaire Informatique</strong>
+                <ul>
+                    <li>Maintenance du parc : installation et sécurisation des serveurs.</li>
+                    <li>Intervention helpdesk et assistance utilisateurs.</li>
+                    <li>Renforcement de la sécurité réseau (firewall, accès).</li>
+                    <li>Rédaction de procédures et suivi des logs de sécurité.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>🎓 Formation Académique</h3>
+            <div class="education-item">
+                <span class="date">2021 - 2024</span>
+                <span class="company">ESGIS, Cotonou</span>
+                <p>Licence Informatique, Réseaux & Télécommunications</p>
+            </div>
+            <div class="education-item">
+                <span class="date">2021</span>
+                <span class="company">Laura Vicuna</span>
+                <p>Bac D, Mention Assez Bien</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>
